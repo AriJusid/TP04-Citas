@@ -4,7 +4,7 @@ function ListadoCitas({ citas }) {
   return (
     <>
     {citas.map((cita) => (
-      <Cita key={cita.id} cita={cita} />
+      <Cita cita={cita} />
     ))}
     </>
     );
