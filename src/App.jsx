@@ -11,9 +11,10 @@ function App() {
   return (
     <>
       <h2>Administra tus citas</h2>
-
-      <Formulario setCitas={setCitas}/>
-      <ListadoCitas citas={citas}/>
+      <div style={{display:'flex'}}/>
+        <Formulario setCitas={setCitas}/>
+        <ListadoCitas citas={citas}/>
+      <div/>
     </>
   )
 }
