@@ -6,10 +6,12 @@ import  { useState } from 'react'
 
 function App() {
   
-  const [citas, setCitas] = useState();
+  const [citas, setCitas] = useState([]);
   
   return (
     <>
+      <h2>Administra tus citas</h2>
+
       <Formulario setCitas={setCitas}/>
       <ListadoCitas citas={citas}/>
     </>

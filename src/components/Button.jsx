@@ -1,9 +1,9 @@
 import React from "react";
 
-function Button () {
+function Button ({onClick}) {
     return(
         <>
-        <button type="submit" className="u-full-width button-primary" >Agregar Cita</button>
+        <button onClick={onClick} className="u-full-width button-primary" >Agregar Cita</button>
         </>
     );
 }
