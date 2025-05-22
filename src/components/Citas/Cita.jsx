@@ -1,6 +1,6 @@
 import React from "react";
 import './Cita.css'
-function Cita ({cita}) {
+function Cita ({cita, eliminarCita}) {
     return(
         <>
         <div className="one-half column">
@@ -11,7 +11,8 @@ function Cita ({cita}) {
               <p>Dueño: <span>{cita.nombreDueño}</span></p>
               <p>Fecha: <span>{cita.fecha}</span></p>
               <p>Hora: <span>{cita.hora}</span></p>
-              <p>Sintomas: <span>{cita.sintomas}</span></p><button className="button elimnar u-full-width">Eliminar ×</button>
+              <p>Sintomas: <span>{cita.sintomas}</span></p>
+              <button  onClick={eliminarCita} className="button elimnar u-full-width">Eliminar ×</button>
             </div>
         </div>
         </>

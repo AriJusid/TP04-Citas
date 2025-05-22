@@ -1,10 +1,10 @@
 import Cita from './Cita'
 
-function ListadoCitas({ citas }) {
+function ListadoCitas({ citas, eliminarCita}) {
   return (
     <>
-    {citas.map((cita) => (
-      <Cita cita={cita} />
+    {citas.map((cita, index) => (
+      <Cita cita={cita} eliminarCita={() => eliminarCita(index)} />
     ))}
     </>
     );
