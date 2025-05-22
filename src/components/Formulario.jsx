@@ -36,7 +36,7 @@ function Formulario({ setCitas }) {
             <h2>Crear mi Cita</h2>
             <form>
                 <label>Nombre Mascota</label>
-                <input type="text" value={nombreMascota} className="u-full-width" placeholder="Nombre Mascota" id="nombre" onChange={ev => setNombre(ev.target.value)}/>
+                <input type="text" value={nombreMascota} className="mascot" placeholder="Nombre Mascota" id="nombre" onChange={ev => setNombre(ev.target.value)}/>
                 <label>Nombre Dueño</label>
                 <input type="text" value={nombreDueño} className="u-full-width" placeholder="Nombre dueño de la mascota" id="dueño" onChange={ev => setDueño(ev.target.value)}/>
                 <label>Fecha</label>

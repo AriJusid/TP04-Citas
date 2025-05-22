@@ -15,7 +15,6 @@ function App() {
   
   return (
     <>
-      <h2>Administra tus citas</h2>
       <div style={{display:'flex'}}/>
         <Formulario setCitas={setCitas}/>
         <ListadoCitas citas={citas} eliminarCita={eliminarCita}/>
