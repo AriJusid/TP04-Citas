@@ -1,22 +1,19 @@
-import React from "react";
-import './Cita.css'
-function Cita ({cita, eliminarCita}) {
-    return(
-        <>
-        <div className="one-half column">
+import React from 'react';
+import './Cita.css';
 
-         <div className="cita">
-            
-         <p>Mascota: <span>{cita.nombreMascota}</span></p>
-              <p>Dueño: <span>{cita.nombreDueño}</span></p>
-              <p>Fecha: <span>{cita.fecha}</span></p>
-              <p>Hora: <span>{cita.hora}</span></p>
-              <p>Sintomas: <span>{cita.sintomas}</span></p>
-              <button  onClick={eliminarCita} className="button elimnar u-full-width">Eliminar ×</button>
-            </div>
-        </div>
-        </>
-    );
+function Cita({ cita, eliminarCita }) {
+  const { nombreMascota, nombreDueño, fecha, hora, sintomas } = cita;
+
+  return (
+    <div className="cita">
+      <p><strong>Mascota:</strong> {nombreMascota}</p>
+      <p><strong>Dueño:</strong> {nombreDueño}</p>
+      <p><strong>Fecha:</strong> {fecha}</p>
+      <p><strong>Hora:</strong> {hora}</p>
+      <p><strong>Síntomas:</strong> {sintomas}</p>
+      <button onClick={eliminarCita} className="button eliminar">Eliminar ×</button>
+    </div>
+  );
 }
 
-export default Cita
+export default Cita;
